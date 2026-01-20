@@ -7,7 +7,7 @@ A robust, concurrent-safe seat booking system for movie shows with real-time sea
 ### Core Functionality
 - **Real-time seat availability** tracking
 - **Concurrent booking** with distributed locking
-- **Seat reservation** with automatic expiration (10 minutes)
+- **Seat reservation** with automatic expiration (5 minutes)
 - **Booking confirmation** and seat release mechanisms
 - **Comprehensive statistics** for each show
 
@@ -60,7 +60,7 @@ A robust, concurrent-safe seat booking system for movie shows with real-time sea
 - **Atomic seat updates** within locked sections
 
 ### 2. Incomplete Bookings
-- Reservations automatically expire after **10 minutes** (MongoDB TTL index)
+- Reservations automatically expire after **5 minutes** (MongoDB TTL index)
 - **Background cleanup** of expired reservations
 - **Manual release** option for users
 
